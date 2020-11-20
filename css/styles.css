@@ -848,17 +848,49 @@ About-Page
 }
 
 .about-card {
-  background-color: var(--clr-primary);
-  border-radius: var(--radius);
   color: var(--clr-grey-1);
+  margin-bottom: 2rem;
 }
 
-.about-picture-page {
-  width: 100%;
-  height: 25rem;
-}
+/* .about-picture-page {
+} */
 
 .about-picture-page img {
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
+  object-fit: cover;
+  height: 17rem;
+}
+
+.about-card-info {
+  max-height: 25rem;
+  background-color: var(--clr-primary);
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  text-align: center;
+  padding: 1rem 3rem;
+}
+
+.about-card-info h3 {
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .about-card {
+    float: left;
+    width: 47.5%;
+  }
+  .about-card:first-child {
+    margin-right: 5%;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .about-card {
+    width: 30%;
+    margin-right: 5%;
+  }
+  .about-card:last-child {
+    margin-right: 0;
+  }
 }
